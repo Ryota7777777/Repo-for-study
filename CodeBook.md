@@ -1,11 +1,8 @@
-The dataset includes the following files:
+The dataset includes the following file:
 =========================================
 
-- 'mergedata.csv': Merged the training and the test sets, which extracts only the measurements on the mean and standard deviation
+- 'average.txt': Created from the merged data of the training and the test set with the average for each subject and activity
 
-- 'averageSubject.csv': Created from above merged data with the average for each subject
-
-- 'averageActivity.csv': Created from above merged data with the average for each activity
 
 The dataset is transformed as below:
 =========================================
@@ -20,12 +17,12 @@ The dataset is transformed as below:
 
 - appropriate labels are added from the source file, features.txt
 
-- second independent data set, includes average of each activity and each subject, are created from above merge data set
+- second independent data set, includes average of each activity and each subject, is created from above merge data set
 
 
 Notes: 
 ======
-- run_analysis.R is the script for creating the above three datasets
+- run_analysis.R is the script for creating the above dataset
 
 - This dataset is created from the source data on below URL. For more information about this dataset visit: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
