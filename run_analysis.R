@@ -41,8 +41,7 @@ names(mergedata3) <- label
 ## creates a second, independent tidy data set with the average of each variable for each activity and each subject
 meanSubject <- aggregate(mergedata3, list(mergedata3$Subject), mean)
 meanActivity <- aggregate(mergedata3, list(mergedata3$Activity), mean)
+average <- rbind(meanSubject, meanActivity)
 
-## write to CSV files
-write.csv(mergedata3, "mergedata.csv")
-write.csv(meanSubject, "averageSubject.csv")
-write.csv(meanActivity, "averageActivity.csv")
+## write to text file
+write.table(average, "average.txt", row.name=FALSE) 
