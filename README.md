@@ -1,8 +1,15 @@
-run_analysis.R is script for creating below three datasets:
+run_analysis.R is script for creating file - average.txt:
 =========================================
 
-- 'mergedata.csv': Merged the training and the test sets, which extracts only the measurements on the mean and standard deviation
+- both test data table and train data table are created from the source dataset
 
-- 'averageSubject.csv': Created from above merged data with the average for each subject
+- merged the two dataset
 
-- 'averageActivity.csv': Created from above merged data with the average for each activity
+- extracts particular data including the mean and standard deviation
+
+- the column for activity description is added
+
+- appropriate labels are added from the source file, features.txt
+
+- second independent data set, includes average of each activity and each subject, is created from above merge data set
+
